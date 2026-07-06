@@ -41,9 +41,15 @@ $ cp .env.example .env
 
 Set your environment variable in the `.env` file. like `OPENAI_API_KEY` value.
 
-##Run the FastAPI server
+## Run Docker Compose Services
+$ cd docker
+$ cp .env.example .env
+
+- update `.env` with your credentials 
+
+## Run the FastAPI server
 ```bash
-uvicorn main:app --reload --host 0.0.0.0
+uvicorn main:app --reload --host 0.0.0.0 --port 5000
 ```
 
 ## POSTMAN Collections 
